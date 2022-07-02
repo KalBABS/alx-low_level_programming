@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - This program prints every decimal digit
+ * Main - This program prints every decimal digit
  * Return: 0 (Success)
  */
 
