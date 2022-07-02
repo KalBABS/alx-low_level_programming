@@ -1,32 +1,23 @@
 #include <stdio.h>
 
 /**
- *main -> assign a random number to the variable n each time it is executed
- *and print the last digit of the number stored in the variable n
- *Return : always 0
- */
+ * main - prints numbers of base 16 in lowercase
+ * followed by new line
+ * Return: 0 if (successful)
+*/
 
 int main(void)
 {
-	/**
-	 * Hexadecimal
-	 * 0 1 2 3 4 5 6 7 8 9 a b c d e f
-	 */
-        char ch;
-	int n;
-        for (n = 48; n <= 57; n++)
-        {
+	int i;
 
-                putchar(n);
-        }
-
-        for (ch = 'a'; ch <= 'f'; ch++)
-        {
-
-		putchar(ch);
-        }
-
-        putchar(10); /* this is an ascii code for new line*/
-
-        return (0);
+	for (i = 48; i < 58; i++)
+	{
+		putchar(i);
+	}
+	for (i = 97; i <= 102; i++)
+	{
+		putchar(i);
+	}
+	putchar('\n');
+	return (0);
 }

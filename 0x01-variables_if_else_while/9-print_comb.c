@@ -1,25 +1,27 @@
 #include <stdio.h>
 
 /**
- *main -> assign a random number to the variable n each time it is executed
- *and print the last digit of the number stored in the variable n
- *Return : always 0
- */
+ * main - prints all npossible numbers of single digits
+ * followed by a new line
+ * Return: 0 if (successful)
+*/
 
 int main(void)
 {
-        int ch;
-        for (ch = 48; ch <= 57; ch++)
-        {
-                putchar(ch);
-		if(ch != 57)
+	int i;
+
+	for (i = 48; i <= 57; i++)
+	{
+		putchar(i);
+		if (i != 57)
 		{
 			putchar(44);
 			putchar(32);
 		}
-        }
-
-        putchar(10); /* this is an ascii code for new line*/
-
-        return (0);
+		else
+		{
+			putchar(10);
+		}
+	}
+	return (0);
 }
