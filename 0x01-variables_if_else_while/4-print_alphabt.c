@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - This program prints every letter of the alphabet
+ * Main - This program prints every letter of the alphabet
  * Return: 0 (Success)
  */
 
