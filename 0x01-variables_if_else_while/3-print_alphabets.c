@@ -1,23 +1,18 @@
 #include <stdio.h>
 
 /**
- *main -> assign a random number to the variable n each time it is executed
- *and print the last digit of the number stored in the variable n
- *Return : always 0
+ * main - This program prints every letter of the alphabet
+ * Return: 0 (Success)
  */
 
 int main(void)
 {
-        int ch;
-        for (ch = 97; ch <= 122; ch++)
-        {
-                putchar(ch);
-        }
-	 for (ch = 65; ch <= 90; ch++)
-        {
-                putchar(ch);
-        }
-        putchar(10); /* this is an ascii code for new line*/
+	int i;
 
-        return (0);
+	for (i = 97; i <= 122; i++)
+		putchar(i);
+	for (i = 65; i < 91; i++)
+		putchar(i);
+	putchar('\n');
+	return (0);
 }
